@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <h1 id="title">מחשבון ארועים</h1>
+            <form id="form">
+                <div class="inputDiv">
+                    <label for="what" class="label">מה חוגגים?</label><br>
+                    <!--                    <input list="what" class="combo" id="inputWhat">-->
+                    <select id="what" class="combo">
+                        <option value="0">בחר\י"</option>
+                        <option value="1">ברית\בריתה"</option>
+                        <option value="2">בר\בת מצווה"</option>
+                        <option value="3">"חתונה"</option>
+                        <option value="4">"גירושין"</option>
+                        <option value="5">"הלוויה"</option>
+                    </select>
+                </div>
+
+                <div class="inputDiv">
+                    <label for="many" class="label">כמה באים?</label><br>
+                    <!--                    <input list="many" class="combo" id="inputMany">-->
+                    <select id="many" class="combo">
+                        <option value="0">בחר\י"</option>
+                        <option value="1">לא בא. שולח צ׳ק"</option>
+                        <option value="2">רק אני!"</option>
+                        <option value="3">זוג"</option>
+                        <option value="4">זוג+ילד"</option>
+                        <option value="5">ני וכל המשפחה"</option>
+                    </select>
+                </div>
+
+                <div class="inputDiv">
+                    <label for="who" class="label">כמה את\ה קרוב לחוגג?</label><br>
+                    <!--                    <input list="who" class="combo" id="inputWho">-->
+                    <select id="who" class="combo">
+                        <option value="0">בחר\י"</option>
+                        <option value="1">שלום שלום"</option>
+                        <option value="2">חבר\ה רחוק\ה"</option>
+                        <option value="3">חבר אח\חברה אחות" </option>
+                        <option value="4">בן דוד" </option>
+                        <option value="5">אבא\אמא שלי" </option>
+                    </select>
+                </div>
+
+                <div class="inputDiv">
+                    <label for="where" class="label">איפה חוגגים?</label><br>
+                    <!--                    <input list="where" class="combo" id="inputWhere">-->
+                    <select id="where" class="combo">
+                        <option value="0">בחר\י"</option>
+                        <option value="1">בדשא בבניין" </option>
+                        <option value="2">אולמי הגעתון" </option>
+                        <option value="3">חוות רונית" </option>
+                        <option value="4">ניו יורק" </option>
+                    </select>
+                </div>
+
+
+                <input id="submit" type="submit" value="חשב">
+            </form>
+            <div id="showResult">
+                <h1>שווי המתנה</h1>
+                <div class="result">סך הכל : <span id="totaltip"></span> שח</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="scrypt.js"></script>
+</body></html>
